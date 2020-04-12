@@ -1,5 +1,5 @@
-if _name_ == '_main_':
-    number = int(input('Enter a number:'))
+if __name__ == '__main__':
+    number = int(input('Enter a number: '))
     if number % 2 == 0:
         print('Number is even')
     else:

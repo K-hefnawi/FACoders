@@ -53,16 +53,16 @@ if __name__ == '__main__':
     done = False
     while not done:
         print('Choose one: students_names, student_score, students_count')
-        choice = input('Choice: ')
+        choice = input('Choice: ').strip()
         if choice == 'students_names':
-            class_name = input('Please enter class name: ')
+            class_name = input('Please enter class name: ').strip()
             getStudentNames(class_name)
         elif choice == 'student_score':
-            class_name = input('Please enter class name: ')
-            student_name = input('Please enter student name: ')
+            class_name = input('Please enter class name: ').strip()
+            student_name = input('Please enter student name: ').strip()
             getStudentScore(class_name, student_name)
         elif choice == 'students_count':
-            class_name = input('Please enter class name: ')
+            class_name = input('Please enter class name: ').strip()
             getStudentCount(class_name)
         else:
             print("'{}' is not a valid choice!".format(choice), end = " ")
